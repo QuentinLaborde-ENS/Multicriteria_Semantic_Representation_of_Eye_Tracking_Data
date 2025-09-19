@@ -1,0 +1,2 @@
+# Multicriteria_Semantic_Representation_of_Eye_Tracking_Data
+Multicriteria Semantic Representation of Eye-tracking Data Using Adaptive Symbolization
