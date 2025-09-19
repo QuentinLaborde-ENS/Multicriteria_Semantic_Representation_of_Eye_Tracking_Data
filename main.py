@@ -8,6 +8,7 @@ from typing import Optional, Dict, List
 from pathlib import Path
 from enum import Enum
 import traceback
+import argparse
  
 import processing.normalization as nm
 import processing.segmentation as sg
@@ -170,14 +171,39 @@ def main(dataset: Dataset, method: SymbolizationMethod) -> None:
     
     
 
-if __name__ == '__main__':
-    # Configuration
-    selected_dataset = Dataset.ETRA #Or Dataset.CLDRIVE or Dataset.GAZEBASE
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Run symbolic eye-tracking pipeline")
+     
+    parser.add_argument(
+        "--ETRA",
+        action="store_true",
+        help="Use the ETRA dataset"
+    )
+    parser.add_argument(
+        "--CLDRIVE",
+        action="store_true",
+        help="Use the CLDrive dataset"
+    )
+    parser.add_argument(
+        "--GAZEBASE",
+        action="store_true",
+        help="Use the GazeBase dataset"
+    )
+    
+    args = parser.parse_args()
+     
+    if args.ETRA:
+        selected_dataset = Dataset.ETRA
+    elif args.CLDRIVE:
+        selected_dataset = Dataset.CLDRIVE
+    elif args.GAZEBASE:
+        selected_dataset = Dataset.GAZEBASE
+    else:
+        raise ValueError("Please specify one dataset using --ETRA, --CLDRIVE, or --GAZEBASE")
+     
     selected_method = SymbolizationMethod.KPCA
     
     main(selected_dataset, selected_method)
-    
-  
     
     
     
