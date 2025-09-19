@@ -43,7 +43,7 @@ This will execute the pipeline on the ETRA dataset using the default symbolizati
 
 ### Command-line Arguments
 
-You can specify the dataset and the method as command-line arguments:
+You can specify the dataset as command-line arguments:
 - `--ETRA` : use the **ETRA** dataset  
 - `--CLDRIVE` : use the **CLDrive** dataset  
 - `--GAZEBASE` : use the **GazeBase** dataset 
@@ -55,8 +55,8 @@ If you use this code or find our work useful in your research, please cite:
 
 ```bibtex
 @article{laborde2025multicriteria,
-  title={A Multicriteria Semantic Representation of Eye-Tracking Data},
-  author={Laborde, Quentin and [co-authors if any]},
+  title={A Multicriteria Semantic Representation of Eye-Tracking Data Using Adaptive Symbolization},
+  author={Laborde, Quentin and Laurent Oudre and Nicolas Vayatis and Ioannis Bargiota},
   journal={Pre-print}
 }
 ```
