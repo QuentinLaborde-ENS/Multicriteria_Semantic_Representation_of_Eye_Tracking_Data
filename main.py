@@ -172,7 +172,7 @@ def main(dataset: Dataset, method: SymbolizationMethod) -> None:
 
 if __name__ == '__main__':
     # Configuration
-    selected_dataset = Dataset.CLDRIVE
+    selected_dataset = Dataset.ETRA #Or Dataset.CLDRIVE or Dataset.GAZEBASE
     selected_method = SymbolizationMethod.KPCA
     
     main(selected_dataset, selected_method)

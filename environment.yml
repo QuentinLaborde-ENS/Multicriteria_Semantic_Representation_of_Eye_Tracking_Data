@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+ 
+name: gaze-symbols
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scipy 
+  - ruptures
+  - fastcluster 
+  - plotly
+  - pip
+  - pip:
+      - jupyterlab
+      - seaborn
+      - weighted-levenshtein

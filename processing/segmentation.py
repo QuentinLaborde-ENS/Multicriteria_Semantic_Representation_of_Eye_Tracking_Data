@@ -3,8 +3,7 @@
 import numpy as np
 import ruptures as rpt
 import pandas as pd
-import matplotlib.pyplot as plt
-import logging
+import matplotlib.pyplot as plt 
 from typing import Dict, List, Optional
 from pathlib import Path
 from enum import Enum

@@ -1,17 +1,14 @@
 # -*- coding: utf-8 -*-
 import numpy as np
 import pickle
-import matplotlib.pyplot as plt
-from scipy.spatial.distance import squareform
-from fastcluster import linkage
+import matplotlib.pyplot as plt 
 from sklearn.metrics import ConfusionMatrixDisplay, f1_score
 from sklearn.model_selection import KFold
 from sklearn.svm import SVC
 from sklearn.manifold import MDS
-from weighted_levenshtein import lev 
-import kmedoids
-from typing import Dict, List, Tuple, Optional
-from processing.c_comparison_algorithms import c_comparison_algorithms as c_comparison
+from weighted_levenshtein import lev  
+from typing import Dict, List, Tuple, Optional 
+from scipy.spatial.distance import cdist
 import os
 
  
