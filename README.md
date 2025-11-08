@@ -2,7 +2,8 @@
 
 Code accompanying the paper: **Multicriteria Semantic Representation of Eye-Tracking Data Using Adaptive Symbolization**.  
 This repository implements the full, interpretable pipeline to convert multivariate eye-tracking features into symbolic sequences, compute semantic distances between recordings, and evaluate downstream tasks.
-The experiments in this study rely on the CLDrive dataset, which is specifically designed for cognitive-load assessment in driving scenarios. While the present implementation focuses on CLDrive, the same methodology can be applied to the ETRA and GazeBase datasets with only minor adjustments. 
+
+ 
 
 ## 🌐 Overview
 
@@ -36,15 +37,16 @@ After installing the dependencies (see [Installation](#-installation)), you can 
 ### Example
 
 ```bash
-python main.py --binary
+python main.py --ETRA
 ```
 This will execute the pipeline on the ETRA dataset using the default symbolization method (Kernel PCA).
 
 ### Command-line Arguments
 
 You can specify the dataset as command-line arguments:
-- `--binary` : perform **binary** task  
-- `--ternary` : perform **ternary** task   
+- `--ETRA` : use the **ETRA** dataset  
+- `--CLDRIVE` : use the **CLDrive** dataset  
+- `--GAZEBASE` : use the **GazeBase** dataset 
 
 
 ## 📖 Citation
